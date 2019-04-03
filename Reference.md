@@ -20,7 +20,7 @@ njs提供了扩展nginx功能的对象，方法和属性。
 ## nginx objects
 ### HTTP Request
 
-HTTP请求对象仅在`ngx_http_js_module`模块中可用。对象的所有字符串属性都是[字节字符串](#String)。
+HTTP请求对象仅在`ngx_http_js_module`模块中可用。对象的所有字符串属性都是[字节字符串](#string)。
 
 `r.args{}`  
 &emsp;&emsp;请求参数对象，只读  
@@ -51,7 +51,7 @@ HTTP请求对象仅在`ngx_http_js_module`模块中可用。对象的所有字�
 `r.requestBody`  
 &emsp;&emsp; 如果客户端请求正文尚未写入临时文件，则返回该请求正文。要确保客户端请求正文在内存中，其大小应受`client_max_body_size`限制，并且应使用`client_body_buffer_size`设置足够的缓冲区大小。该属性仅在`js_content`指令中可用。  
 `r.responseBody`  
-&emsp;&emsp;拥有[subrequest](#subrequest)响应主体，只读。`r.responseBody`的大小受`subrequest_output_buffer_size`指令的限制。  
+&emsp;&emsp;拥有[subrequest](http://nginx.org/en/docs/dev/development_guide.html#http_subrequests)响应主体，只读。`r.responseBody`的大小受`subrequest_output_buffer_size`指令的限制。  
 `r.return(status[, string])`  
 &emsp;&emsp;将具有指定`status`的整个响应发送给客户端  
 &emsp;&emsp;可以指定重定向URL（对于代码`301`,`302`,`303`,`307`和`308`）或响应正文文本（对于其他代码）作为第二个参数  

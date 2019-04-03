@@ -112,4 +112,4 @@ function hello(r) {
 为指定的变量设置njs函数。
 ```
 ## 请求参数
-Each HTTP njs handler receives one argument, a request object.
+每个`HTTP`的`njs`处理程序都接收一个参数，一个请求对象。
