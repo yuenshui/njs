@@ -2,15 +2,18 @@
 # njs 参考文档  
 原文地址：[http://nginx.org/en/docs/njs/reference.html](http://nginx.org/en/docs/njs/reference.html)  
 [nginx objects]()  
-&emsp;&emsp;[HTTP Request]()  
-&emsp;&emsp;[Stream Session]()  
-[Core]()  
-&emsp;&emsp;[Object]()  
-&emsp;&emsp;[String]()  
-&emsp;&emsp;[JSON]()  
-&emsp;&emsp;[Crypto]()  
-&emsp;&emsp;[Timers]()  
-&emsp;&emsp;[File System]()  
+&emsp;&emsp;[HTTP Request](#http-request)  
+&emsp;&emsp;[Stream Session](#stream-session)  
+[Core](#core)  
+&emsp;&emsp;[Object](#object)  
+&emsp;&emsp;[String](#string)  
+&emsp;&emsp;[JSON](#json)  
+&emsp;&emsp;[Crypto](#crypto)  
+&emsp;&emsp;[Hash](#hash)  
+&emsp;&emsp;[HMAC](#hmac)  
+&emsp;&emsp;[Timers](#timers)  
+&emsp;&emsp;[File System](#file-system)  
+&emsp;&emsp;[File System Flags](#file-system-flags)  
 
 njs提供了扩展nginx功能的对象，方法和属性。
 
@@ -483,7 +486,7 @@ undefined
 - r+ — 打开文件进行读写。如果文件不存在，则会发生异常
 - rs+ — 打开文件以便以同步模式进行读写。强制操作系统绕过本地文件缓存
 - w — 打开文件进行写作。如果该文件不存在，则将创建该文件。如果文件存在，则将替换它
-- wx — 与w相同但如果文件已存在则失败
+- wx — 与`w`相同但如果文件已存在则失败
 - w+ — 打开文件进行读写。如果该文件不存在，则将创建该文件。如果文件存在，则将替换它
 - wx+ — 与`w+`相同，但如果文件已存在则失败
 
