@@ -1,7 +1,7 @@
 # njs脚本语言
 njs是JavaScript语言的一个子集，允许扩展nginx功能。njs是根据[ECMAScript 5.1](http://www.ecma-international.org/ecma-262/5.1/)（严格模式）创建的，带有一些[ECMAScript 6](http://www.ecma-international.org/ecma-262/6.0/)及更高版本的扩展。规范仍在不断推进。
 
-- [Download and install](http://nginx.org/en/docs/njs/install.html)
+- [下载和安装](https://github.com/yuenshui/njs/blob/master/install.md)
 - [Changes](http://nginx.org/en/docs/njs/changes.html)
 - [参考文档](https://github.com/yuenshui/njs/blob/master/Reference.md)
 - [Examples](http://nginx.org/en/docs/njs/examples.html)
