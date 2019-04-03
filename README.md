@@ -3,7 +3,7 @@ njs是JavaScript语言的一个子集，允许扩展nginx功能。njs是根据[E
 
 - [Download and install](http://nginx.org/en/docs/njs/install.html)
 - [Changes](http://nginx.org/en/docs/njs/changes.html)
-- [Reference](https://github.com/yuenshui/njs/blob/master/Reference.md)
+- [参考文档](https://github.com/yuenshui/njs/blob/master/Reference.md)
 - [Examples](http://nginx.org/en/docs/njs/examples.html)
 - [Compatibility](http://nginx.org/en/docs/njs/compatibility.html)
 - [Command-line interface](http://nginx.org/en/docs/njs/cli.html)
